@@ -25,6 +25,10 @@ public class Auto {
         return this.autoMudel;
     }
 
+    public String mootor() {
+        return this.mootor.toString();
+    }
+
     public String valjalaskeAastad() {
         String aastad = "";
         for (int i = 0; i < this.valjalaskeAastad.size(); i++) {

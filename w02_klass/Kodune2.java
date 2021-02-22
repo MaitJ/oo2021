@@ -5,6 +5,6 @@ public class Kodune2 {
         Auto volvo740 = new Auto("Volvo", "740", new String[] {"1993-2000", "1993-1998"}, new Mootor("B230FT", new String[] {"1990-1995", "1990-2005"}, 114.0));
         Auto bmw330d = new Auto("BMW", "330d", new String[] {"2003-2005"}, new Mootor("M57D30", new String[] {"2003-2005"}, 150.0));
 
-        System.out.println(volvo940 + "\n" + volvo740 + "\n" + bmw330d);
+        System.out.println(volvo940 + "\n\n" + volvo740 + "\n\n" + bmw330d);
     }
 }
