@@ -1,1 +1,1 @@
-Omaloodud liides või liideste komplekt. Realiseerivad klassid. Näitprogramm
+Mitu omavahel seotud klassi (nt. hoidla ja eksemplarid) ning näitrakendus nende kasutamiseks
