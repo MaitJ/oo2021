@@ -14,8 +14,16 @@ public class M2ngija extends LiikuvObjekt {
     }
 
     public void muudaSuunda(double dx, double dy) {
-        this.kiirus.x = dx;
-        this.kiirus.y = dy;
+        if (this.hoitavPall != null) {
+            this.kiirus.x = dx;
+            this.kiirus.y = dy;
+
+            this.hoitavPall.lobj.kiirus.x = dx;
+            this.hoitavPall.lobj.kiirus.y = dy;
+        } else {
+            this.kiirus.x = dx;
+            this.kiirus.y = dy;
+        }
     }
 
     public void hoiaPalli(Pall pall) {
@@ -40,10 +48,8 @@ public class M2ngija extends LiikuvObjekt {
 
     public void looPalli(double aeg) {
         if (this.hoitavPall != null) {
-            System.out.println(this.hoitavPall.saaAsukoht());
             this.hoitavPall.nullKoef();
             this.hoitavPall.liigu(aeg);
-            System.out.println(this.hoitavPall.saaAsukoht());
             this.hoitavPall = null;
         } else {
             System.out.println("M2ngija ei hoia palli");

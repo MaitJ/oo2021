@@ -12,13 +12,17 @@ public class Proov1 {
         m2ngijad[1].muudaSuunda(-4, 0);
         m2nguKaart.liigutaM2ngijat(m2ngijad[1], 1);
         m2nguKaart.display();
+
         System.out.println("Peale palliga liikumist: ");
         m2ngijad[1].hoiaPalli(pall);
         m2ngijad[1].muudaSuunda(2, 5);
         m2nguKaart.liigutaM2ngijat(m2ngijad[1], 1);
         m2nguKaart.display();
+
         System.out.println("Palli loomine:");
+        System.out.println("Palli kiirus x: " + pall.lobj.kiirus.x + " y: " + pall.lobj.kiirus.y);
         m2ngijad[1].looPalli(1);
+        System.out.println("Palli kiirus x: " + pall.lobj.kiirus.x + " y: " + pall.lobj.kiirus.y);
         System.out.println("x: " + pall.saaAsukoht().x + " y: " + pall.saaAsukoht().y);
         m2nguKaart.uuendaKaarti();
         m2nguKaart.display();
